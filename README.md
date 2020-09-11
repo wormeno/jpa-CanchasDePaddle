@@ -18,7 +18,7 @@
    		 <version>2.4.0</version>
    	 </dependency>
 
-###  Configurar JPASchemaExport
+###  Configurar JPASchemaExport en IntelliJ
 Main Class debe ser:  “org.uqbarproject.jpa.java8.extras.export.JpaSchemaExport” 
 En Argumentos debe ir:  "db schema.sql true true"
 
