@@ -78,9 +78,19 @@
         references Colores
 
     alter table Participacion 
+        add constraint FK_9mvyrp3rpm1phaqux42y69tmu 
+        foreign key (jugador_id) 
+        references Jugadores
+
+    alter table Participacion 
         add constraint FK_kn4arx2tpeomuc85mssxvngq0 
         foreign key (paleta_codigo) 
         references Paletas
+
+    alter table Participacion 
+        add constraint FK_fkdrcmjbfeubmhpki7fnildno 
+        foreign key (partido_id) 
+        references Partidos
 
     alter table Partidos 
         add constraint FK_euaoyb7bsul9ym4v8u23cix4f 

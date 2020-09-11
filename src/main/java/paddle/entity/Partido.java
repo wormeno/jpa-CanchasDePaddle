@@ -25,12 +25,10 @@ public class Partido {
 
     @ManyToOne
     private Jugador jugador_reserva;
-/*
 
-    @OneToMany( cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
-    private List<Participacion> participanes;
+    @OneToMany(mappedBy="partido", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
+    private List<Participacion> participaciones;
 
-*/
 
 
 }

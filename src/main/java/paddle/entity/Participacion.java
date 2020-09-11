@@ -10,4 +10,10 @@ public class Participacion {
 
     @ManyToOne
     private Paleta paleta;
+
+    @ManyToOne
+    private Partido partido;
+
+    @ManyToOne
+    private Jugador jugador;
 }

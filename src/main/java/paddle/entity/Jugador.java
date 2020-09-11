@@ -20,10 +20,7 @@ public class Jugador {
 
     @ManyToOne
     private Paleta paleta;
-/*
 
     @OneToMany(mappedBy="jugador", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
     private List<Participacion> participaciones;
-*/
-
 }
