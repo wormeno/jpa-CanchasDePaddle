@@ -21,6 +21,7 @@ public class Jugador {
     @ManyToOne
     private Paleta paleta;
 
-    @OneToMany(mappedBy="jugador", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
+    @OneToMany//(mappedBy="jugador", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
+    @JoinColumn(name="jugador_id")
     private List<Participacion> participaciones;
 }

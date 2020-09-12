@@ -16,6 +16,7 @@ public class Cancha {
     @ManyToOne
     private Color color;
 
-    @OneToMany(mappedBy="cancha", cascade = {CascadeType.ALL})
+    @OneToMany
+    @JoinColumn(name="cancha_id")
     private List<Partido> partido;
 }

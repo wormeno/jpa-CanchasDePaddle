@@ -17,16 +17,17 @@ public class Partido {
     @Column(name = "finPartido", columnDefinition = "DATE")
     private LocalDate finPartido;
 
-    @ManyToOne
+   /* @ManyToOne
     private Cancha cancha;
-
+*/
     @ManyToOne
     private Color color;
 
     @ManyToOne
     private Jugador jugador_reserva;
 
-    @OneToMany(mappedBy="partido", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
+    @OneToMany //(mappedBy="partido", cascade = {CascadeType.ALL}, fetch = FetchType.LAZY )
+    @JoinColumn(name="partido_id")
     private List<Participacion> participaciones;
 
 

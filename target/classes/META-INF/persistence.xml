@@ -11,15 +11,13 @@
         <class>paddle.entity.Constructor</class>
         <class>paddle.entity.Paleta</class>
         <class>paddle.entity.Partido</class>
-    <!--    <class>utn.dds.persistencia.futbol.persistence.Equipo</class>
-        <class>utn.dds.persistencia.futbol.persistence.Formacion</class>
-        <class>utn.dds.persistencia.futbol.persistence.Partido</class>-->
 
         <properties> 
-	    <property name="hibernate.archive.autodetection" value="class"/>
+	    <property name="hibernate.archive.autodetection" value="class"/>        
+        
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
             <property name="hibernate.connection.url" value="jdbc:mysql://192.168.56.106:3306/dds_canchas_paddle" />
-            <property name="hibernate.connection.username" value="ap_canchasPadle" />
+            <property name="hibernate.connection.username" value="ap_canchaPaddle" />
             <property name="hibernate.connection.password" value="codeoComoMiAbu" />
 
             <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver" /> 

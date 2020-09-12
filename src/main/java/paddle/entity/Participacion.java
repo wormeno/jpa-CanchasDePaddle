@@ -13,7 +13,7 @@ public class Participacion {
 
     @ManyToOne
     private Partido partido;
-
+/*
     @ManyToOne
-    private Jugador jugador;
+    private Jugador jugador;*/
 }
